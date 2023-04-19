@@ -1,0 +1,35 @@
+{% extends 'base-backend.html.twig' %}
+
+{% block title %}Periodicite index{% endblock %}
+
+{% block body %}
+    <h1>Periodicite index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Groupe</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for periodicite in periodicites %}
+            <tr>
+                <td>{{ periodicite.id }}</td>
+                <td>{{ periodicite.groupe }}</td>
+                <td>
+                    <a href="{{ path('app_admin_periodicite_show', {'id': periodicite.id}) }}">show</a>
+                    <a href="{{ path('app_admin_periodicite_edit', {'id': periodicite.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_admin_periodicite_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base-backend.html.twig' %}
+
+{% block title %}New Fiches{% endblock %}
+
+{% block body %}
+    <h1>Create new Fiches</h1>
+
+    {{ include('admin_fiches/_form.html.twig') }}
+
+    <a href="{{ path('app_admin_fiches_index') }}">back to list</a>
+{% endblock %}

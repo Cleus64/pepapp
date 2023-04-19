@@ -1,0 +1,11 @@
+{% extends 'base-backend.html.twig' %}
+
+{% block title %}New Periodicite{% endblock %}
+
+{% block body %}
+    <h1>Create new Periodicite</h1>
+
+    {{ include('admin_periodicite/_form.html.twig') }}
+
+    <a href="{{ path('app_admin_periodicite_index') }}">back to list</a>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base-backend.html.twig' %}
+
+{% block title %}Fiches index{% endblock %}
+
+{% block body %}
+    <h1>Fiches index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>FileName</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for fich in fiches %}
+            <tr>
+                <td>{{ fich.id }}</td>
+                <td>{{ fich.fileName }}</td>
+                <td>
+                    <a href="{{ path('app_admin_fiches_show', {'id': fich.id}) }}" class="btn btn-dark"><i class="align-middle" data-feather="eye"></i></a>
+                    <a href="{{ path('app_admin_fiches_edit', {'id': fich.id}) }}" class="btn btn-success"><i class="align-middle" data-feather="edit-2"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_admin_fiches_new') }}">Create new</a>
+{% endblock %}

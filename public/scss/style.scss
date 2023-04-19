@@ -1,0 +1,27 @@
+body{
+    background-color:#9097F5 ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    main{
+        &.container-lg{
+            min-height: calc(100vh - 56px - 56px);
+        }
+        h1{
+            display: flex;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 2rem;
+            text-align: center;
+        }
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.8rem;
+        }
+    }
+    .endcatch{
+        text-align: right;
+    }
+}
+

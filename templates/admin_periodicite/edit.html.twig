@@ -1,0 +1,13 @@
+{% extends 'base-backend.html.twig' %}
+
+{% block title %}Edit Periodicite{% endblock %}
+
+{% block body %}
+    <h1>Edit Periodicite</h1>
+
+    {{ include('admin_periodicite/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_admin_periodicite_index') }}">back to list</a>
+
+    {{ include('admin_periodicite/_delete_form.html.twig') }}
+{% endblock %}
