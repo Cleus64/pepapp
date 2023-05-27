@@ -23,6 +23,18 @@ class Date
     #[ORM\ManyToOne(inversedBy: 'dates')]
     private ?Tache $tache = null;
 
+    #[ORM\ManyToOne(inversedBy: 'date')]
+    private ?Employee $employee = null;
+
+    public function __toString()
+    {
+        return $this->getEmployee();
+    }
+    
+    public function __construct()
+    {
+        $this->libDate = new \DateTime('now');
+    }
     public function getId(): ?int
     {
         return $this->id;
@@ -36,7 +48,6 @@ class Date
     public function setLibDate(\DateTimeInterface $libDate): self
     {
         $this->libDate = $libDate;
-
         return $this;
     }
 
@@ -60,6 +71,18 @@ class Date
     public function setTache(?Tache $tache): self
     {
         $this->tache = $tache;
+
+        return $this;
+    }
+
+    public function getEmployee(): ?Employee
+    {
+        return $this->employee;
+    }
+
+    public function setEmployee(?Employee $employee): self
+    {
+        $this->employee = $employee;
 
         return $this;
     }

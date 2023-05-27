@@ -18,7 +18,7 @@ class UserType extends AbstractType
             ->add('nom')
             ->add('prenom')
             ->remove('toDoList')
-            ->add('restaurants')
+            ->remove('restaurants')
         ;
     }
 

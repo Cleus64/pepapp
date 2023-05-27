@@ -11,141 +11,128 @@ class EquipementFixtures extends Fixture
     //===================================================================//
     //==========================PROPRIETES ==============================//
     //===================================================================//
-    public const GROUPE_SHAKE="Shake-Sundae";
-    public const GROUPE_ABS="groupe-abs";
-    public const GROUPE_ADOUCISSEUR="groupe_adoucisseur";
-    public const GROUPE_ADJ="groupe-adj";
-    public const GROUPE_CHAMBREFROIDE="groupe-chambre-froide";
-    public const GROUPE_CONVOYEUR="groupe-convoyeur";
-    public const GROUPE_FOUR="groupe-four";
-    public const GROUPE_FRITEUSE="groupe-friteuse";
-    public const GROUPE_GRILL="groupe-grill";
-    public const GROUPE_CAFE="groupe-machine-cafe";
-    public const GROUPE_JUS="groupe-jus";
-    public const GROUPE_LAVE_PLATEAUX="groupe-lave-plateaux";
-    public const GROUPE_STEAMER="groupe-steamer";
-    public const GROUPE_SYSTEME_BOISSONS="groupe-systeme-boissons";
-    public const GROUPE_TESTO="groupe-testo";
-    public const GROUPE_TOASTER_UNIVERSEL="groupe-toaster-universel";
-    public const GROUPE_APPAREIL_FRIGORIFIQUE="groupe-appareil-frigorifique";
-    public const GROUPE_CONTENEUR="groupe-conteneur";
-    public const GROUPE_DISTRIBUTEUR_SAUCE="groupe-distributeur-sauce";
-    public const GROUPE_MACHINE_GLACONS="groupe-machine-glacons";
-    public const GROUPE_SPATULE="groupe-spatule";
-    public const GROUPE_UHC="groupe-uhc";
+    public const SHAKE="Shake-Sundae";
+    public const ABS="groupe-abs";
+    public const ADOUCISSEUR="adoucisseur";
+    public const ADJ="groupe-adj";
+    public const CHAMBREFROIDE="groupe-chambre-froide";
+    public const CONVOYEUR="groupe-convoyeur";
+    public const FOUR="groupe-four";
+    public const FRITEUSE="groupe-friteuse";
+    public const GRILL="groupe-grill";
+    public const CAFE="groupe-machine-cafe";
+    public const JUS="groupe-jus";
+    public const LAVE_PLATEAUX="groupe-lave-plateaux";
+    public const STEAMER="groupe-steamer";
+    public const SYSTEME_BOISSONS="groupe-systeme-boissons";
+    public const TESTO="groupe-testo";
+    public const TOASTER_UNIVERSEL="groupe-toaster-universel";
+    public const APPAREIL_FRIGORIFIQUE="groupe-appareil-frigorifique";
+    public const CONTENEUR="groupe-conteneur";
+    public const DISTRIBUTEUR_SAUCE="groupe-distributeur-sauce";
+    public const MACHINE_GLACONS="groupe-machine-glacons";
+    public const SPATULE="groupe-spatule";
+    public const UHC="groupe-uhc";
 
     public function load(ObjectManager $manager): void
     {
-        $equipement = new Equipement();
-        $equipement->setNom("Shake Sundae");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_SHAKE, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("ABS");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_ABS, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Adoucisseur");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_ADOUCISSEUR, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Aire de jeux");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_ADJ, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Chambres Froides");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_CHAMBREFROIDE, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Convoyeur");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_CONVOYEUR, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Four");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_FOUR, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Friteuses");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_FRITEUSE, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Grills");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_GRILL, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Machine à café");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_CAFE, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Machine à jus d'orange");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_JUS, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Lave Plateaux");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_LAVE_PLATEAUX, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Steamer");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_STEAMER, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Système boissons");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_SYSTEME_BOISSONS, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Testo");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_TESTO, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Toaster universel");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_TOASTER_UNIVERSEL, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Appareils frigorifiques");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_APPAREIL_FRIGORIFIQUE, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Conteneur conservateur huiles usagées");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_CONTENEUR, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Distributeur sauce");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_DISTRIBUTEUR_SAUCE, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Machine à Glaçons");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_MACHINE_GLACONS, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("Spatules");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_SPATULE, $equipement);
-
-        $equipement = new Equipement();
-        $equipement->setNom("UHC");
-        $manager->persist($equipement);
-        $this->addReference(self::GROUPE_UHC, $equipement);
-
+        $equipements =[
+            [
+                "nom" => "Shake Sundae",
+                "self" => (self::SHAKE)
+            ],
+            [
+                "nom" => "ABS",
+                "self" => (self::ABS)
+            ],
+            [
+                "nom" => "Adoucisseur",
+                "self" => (self::ADOUCISSEUR)
+            ],
+            [
+                "nom" => "Aire de jeux",
+                "self" => (self::ADJ)
+            ],
+            [
+                "nom" => "Chambre froide",
+                "self" => (self::CHAMBREFROIDE)
+            ],
+            [
+                "nom" => "Convoyeur",
+                "self" => (self::CONVOYEUR)
+            ],
+            [
+                "nom" => "Four",
+                "self" => (self::FOUR)
+            ],
+            [
+                "nom" => "Friteuse",
+                "self" => (self::FRITEUSE)
+            ],
+            [
+                "nom" => "Grill",
+                "self" => (self::GRILL)
+            ],
+            [
+                "nom" => "Machine à café",
+                "self" => (self::CAFE)
+            ],
+            [
+                "nom" => "Lave Plateaux",
+                "self" => (self::LAVE_PLATEAUX)
+            ],
+            [
+                "nom" => "Machine à jus d'orange",
+                "self" => (self::JUS)
+            ],
+            [
+                "nom" => "Steamer",
+                "self" => (self::STEAMER)
+            ],
+            [
+                "nom" => "Système boissons",
+                "self" => (self::SYSTEME_BOISSONS)
+            ],
+            [
+                "nom" => "Testo",
+                "self" => (self::TESTO)
+            ],
+            [
+                "nom" => "Toaster Universel",
+                "self" => (self::TOASTER_UNIVERSEL)
+            ],
+            [
+                "nom" => "Appareil Frigorifique",
+                "self" => (self::APPAREIL_FRIGORIFIQUE)
+            ],
+            [
+                "nom" => "Conteneur huiles usagées",
+                "self" => (self::CONTENEUR)
+            ],
+            [
+                "nom" => "Distributeur sauce",
+                "self" => (self::DISTRIBUTEUR_SAUCE)
+            ],
+            [
+                "nom" => "Spatule",
+                "self" => (self::SPATULE)
+            ],
+            [
+                "nom" => "UHC",
+                "self" => (self::UHC)
+            ],
+            [
+                "nom" => "Machine à glaçons",
+                "self" => (self::MACHINE_GLACONS)
+            ],
+        ];
+        foreach ($equipements as $equipement) {
+            $newEquipement = new Equipement();
+            $newEquipement->setNom($equipement["nom"]);
+            $manager->persist($newEquipement);
+            $this->addReference($equipement["self"], $newEquipement);
+        };
+        
         $manager->flush();
     }
 }

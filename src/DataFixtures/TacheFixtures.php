@@ -10,349 +10,291 @@ class TacheFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-        $tache = new Tache();
-        $tache->setNom("Rupture de la chaîne bactérienne toppings");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_BIHEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SHAKE));
-        $manager->persist($tache);
 
-        $tache = new Tache();
-        $tache->setNom("Nettoyage du cylindre à Glaçons");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_ABS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle du niveau de sel");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_ADOUCISSEUR));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Inspection hebdomadaire");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_ADJ));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage des grilles des évaporateurs");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_CHAMBREFROIDE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Test des coup de poing de sécurité, arrêts d'urgence");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_CONVOYEUR));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage et aseptisation des grilles et des supports");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_FOUR));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage Arrière");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_FRITEUSE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contôle du temps de cuisson");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_GRILL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage des bords");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_GRILL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage de extérieur et arrère");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_GRILL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage bac à grains et bec");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_CAFE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle volume et température");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_CAFE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage poudre hebdomadaire");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_CAFE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage hebdomadaire");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_JUS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage hebdomadaire");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_LAVE_PLATEAUX));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Rupture chaîne bactérienne sirops");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SHAKE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage des filtres à air");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SHAKE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage et aseptisation des bains marie et pompes");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SHAKE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Détartrage de la chambre à vapeur");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_STEAMER));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Aseptisation des raccords");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SYSTEME_BOISSONS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle des température boissons");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SYSTEME_BOISSONS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Détartrage et aseptisation du bec eau courante");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SYSTEME_BOISSONS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Verification calibrage 2 testo, huile en cours d'utilisation");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_TESTO));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle temps de cuisson");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_TOASTER_UNIVERSEL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Serrage des boulons et des vis des pieds");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_HEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_TOASTER_UNIVERSEL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle de la température et calibration");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_BIMENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_FRITEUSE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle de la température et calibration");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_BIMENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_GRILL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage bi mensuel");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_BIMENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_LAVE_PLATEAUX));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Aseptisation, rupture chaîne bactérienne");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_BIMENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SHAKE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Détartrage circuit eau et bac à glaçons");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_ABS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage du groupe froid en toiture");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_ABS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle des ratios et volumes");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_ABS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Inspection mensuelle");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_ADJ));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage des condenseurs");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_APPAREIL_FRIGORIFIQUE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage des connexions flexibles");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_CONTENEUR));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle du dosage");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_DISTRIBUTEUR_SAUCE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle des températures et câble d'alimentation");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_GRILL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle temps de récupération");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_FRITEUSE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle limite haute");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_FRITEUSE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage de l'intérieur");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_GRILL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Calibration mensuelle de la sonde de température");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_GRILL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Calibration des zones de chauffe");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_GRILL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Détartrage et aseptisation");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_MACHINE_GLACONS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle de température de coulée");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_CAFE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage filtre à air");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_JUS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle du ratio");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_JUS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Remplacement des joints");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SHAKE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle température de tirage et réservoir");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SHAKE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle température et volume toppings");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SHAKE));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Changement de lame");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SPATULE));
-        $manager->persist($tache);
-        
-        $tache = new Tache();
-        $tache->setNom("Remplacement du pré filtre");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_SYSTEME_BOISSONS));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Test huile neuve");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_TESTO));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle et calibration température");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_MENSUEL));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_TOASTER_UNIVERSEL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle couvercles, plateaux à pains et spatules");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_BIHEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_TOASTER_UNIVERSEL));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Contrôle et calibration température");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_BIHEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_UHC));
-        $manager->persist($tache);
-
-        $tache = new Tache();
-        $tache->setNom("Nettoyage des ventilateurs");
-        $tache->setPeriodicite($this->getReference(PeriodiciteFixtures::GROUPE_BIHEBDOMADAIRE));
-        $tache->setEquipement($this->getReference(EquipementFixtures::GROUPE_UHC));
-        $manager->persist($tache);
-
-
+        $taches =[
+            [
+                "nom" => "Shake - Rupture de la chaîne bactérienne toppings",
+                "periodicite" => (PeriodiciteFixtures::BIHEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::SHAKE)
+            ],
+            [
+                "nom" => "ABS - Nettoyage du cylindre à Glaçons",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::ABS)
+            ],
+            [
+                "nom" => "Adoucisseur - Contrôle du niveau de sel",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::ADOUCISSEUR)
+            ],
+            [
+                "nom" => "Aire de jeu - Inspection hebdomadaire",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::ADJ)
+            ],
+            [
+                "nom" => "Chambre froide - Nettoyage des grilles des évaporateurs",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::CHAMBREFROIDE)
+            ],
+            [
+                "nom" => "Convoyeur - Test des coup de poing de sécurité, arrêts d'urgence",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::CONVOYEUR)
+            ],
+            [
+                "nom" => "Four - Nettoyage et aseptisation des grilles et des supports",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::FOUR)
+            ],
+            [
+                "nom" => "Friteuse - Nettoyage Arrière",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::FRITEUSE)
+            ],
+            [
+                "nom" => "Grill - Contôle du temps de cuisson",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::GRILL)
+            ],
+            [
+                "nom" => "Grill - Nettoyage des bords",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::GRILL)
+            ],
+            [
+                "nom" => "Grill - Nettoyage de extérieur et arrère",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::GRILL)
+            ],
+            [
+                "nom" => "Machine à café - Nettoyage bac à grains et bec",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::CAFE)
+            ],
+            [
+                "nom" => "Machine à café - Contrôle volume et température",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::CAFE)
+            ],
+            [
+                "nom" => "Machine à café - Nettoyage poudre hebdomadaire",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::CAFE)
+            ],
+            [
+                "nom" => "Machine à jus d'orange - Nettoyage hebdomadaire",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::JUS)
+            ],
+            [
+                "nom" => "Lave Plateaux - Nettoyage hebdomadaire",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::LAVE_PLATEAUX)
+            ],
+            [
+                "nom" => "Shake - Rupture chaîne bactérienne sirops",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::SHAKE)
+            ],
+            [
+                "nom" => "Shake - Nettoyage des filtres à air",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::SHAKE)
+            ],
+            [
+                "nom" => "Shake - Nettoyage et aseptisation des bains marie et pompes",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::SHAKE)
+            ],
+            [
+                "nom" => "Steamer - Détartrage de la chambre à vapeur",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::STEAMER)
+            ],
+            [
+                "nom" => "Systeme boissons - Aseptisation des raccords",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::SYSTEME_BOISSONS)
+            ],
+            [
+                "nom" => "Systeme boissons - Contrôle des température boissons",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::SYSTEME_BOISSONS)
+            ],
+            [
+                "nom" => "Systeme boissons - Détartrage et aseptisation du bec eau courante",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::SYSTEME_BOISSONS)
+            ],
+            [
+                "nom" => "Testo - Verification calibrage 2 testo, huile en cours d'utilisation",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::TESTO)
+            ],
+            [
+                "nom" => "Toaster Universel - Contrôle temps de cuisson",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::TOASTER_UNIVERSEL)
+            ],
+            [
+                "nom" => "Toaster Universel - Serrage des boulons et des vis des pieds",
+                "periodicite" => (PeriodiciteFixtures::HEBDOMADAIRE),
+                "equipement" => (EquipementFixtures::TOASTER_UNIVERSEL)
+            ],
+            [
+                "nom" => "Friteuse - Contrôle de la température et calibration",
+                "periodicite" => (PeriodiciteFixtures::BIMENSUEL),
+                "equipement" => (EquipementFixtures::FRITEUSE)
+            ],
+            [
+                "nom" => "Grill - Contrôle de la température et calibration",
+                "periodicite" => (PeriodiciteFixtures::BIMENSUEL),
+                "equipement" => (EquipementFixtures::GRILL)
+            ],
+            [
+                "nom" => "Lave Plateaux - Nettoyage bi mensuel",
+                "periodicite" => (PeriodiciteFixtures::BIMENSUEL),
+                "equipement" => (EquipementFixtures::LAVE_PLATEAUX)
+            ],
+            [
+                "nom" => "Shake - Aseptisation, rupture chaîne bactérienne",
+                "periodicite" => (PeriodiciteFixtures::BIMENSUEL),
+                "equipement" => (EquipementFixtures::SHAKE)
+            ],
+            [
+                "nom" => "ABS - Détartrage circuit eau et bac à glaçons",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::ABS)
+            ],
+            [
+                "nom" => "ABS - Nettoyage du groupe froid en toiture",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::ABS)
+            ],
+            [
+                "nom" => "ABS - Contrôle des ratios et volumes",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::ABS)
+            ],
+            [
+                "nom" => "Aire de jeux - Inspection mensuelle",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::ADJ)
+            ],
+            [
+                "nom" => "Appareils Frigorifiques - Nettoyage des condenseurs",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::APPAREIL_FRIGORIFIQUE)
+            ],
+            [
+                "nom" => "Conteneur - Nettoyage des connexions flexibles",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::CONTENEUR)
+            ],
+            [
+                "nom" => "Distributeur Sauce - Contrôle du dosage",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::DISTRIBUTEUR_SAUCE)
+            ],
+            [
+                "nom" => "Grill - Contrôle des températures et câble d'alimentation",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::GRILL)
+            ],
+            [
+                "nom" => "Friteuse - Contrôle temps de récupération",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::FRITEUSE)
+            ],
+            [
+                "nom" => "Friteuse - Contrôle limite haute",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::FRITEUSE)
+            ],
+            [
+                "nom" => "Grill - Nettoyage de l'intérieur",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::GRILL)
+            ],
+            [
+                "nom" => "Grill - Calibration mensuelle de la sonde de température",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::GRILL)
+            ],
+            [
+                "nom" => "Grill - Calibration des zones de chauffe",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::GRILL)
+            ],
+            [
+                "nom" => "Machine à glaçons - Détartrage et aseptisation",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::MACHINE_GLACONS)
+            ],
+            [
+                "nom" => "Machine à café - Contrôle de température de coulée",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::CAFE)
+            ],
+            [
+                "nom" => "Machine à jus d'orange - Nettoyage filtre à air",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::JUS)
+            ],
+            [
+                "nom" => "Machine à jus d'orange - Contrôle du ratio",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::JUS)
+            ],
+            [
+                "nom" => "Shake - Contrôle température de tirage et réservoir",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::SHAKE)
+            ],
+            [
+                "nom" => "Spatule - Changement de lame",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::SPATULE)
+            ],
+            [
+                "nom" => "Systeme boissons - Remplacement du pré filtre",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::SYSTEME_BOISSONS)
+            ],
+            [
+                "nom" => "Testo - Test huile neuve",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::TESTO)
+            ],
+            [
+                "nom" => "Toaster Universel - Contrôle et calibration température",
+                "periodicite" => (PeriodiciteFixtures::MENSUEL),
+                "equipement" => (EquipementFixtures::TOASTER_UNIVERSEL)
+            ],
+            [
+                "nom" => "Toaster Universel - Contrôle couvercles, plateaux à pains et spatules",
+                "periodicite" => (PeriodiciteFixtures::BIMENSUEL),
+                "equipement" => (EquipementFixtures::TOASTER_UNIVERSEL)
+            ],
+            [
+                "nom" => "UHC - Contrôle et calibration température",
+                "periodicite" => (PeriodiciteFixtures::BIMENSUEL),
+                "equipement" => (EquipementFixtures::UHC)
+            ],
+            [
+                "nom" => "UHC - Nettoyage des ventilateurs",
+                "periodicite" => (PeriodiciteFixtures::BIMENSUEL),
+                "equipement" => (EquipementFixtures::UHC)
+            ],
+        ];
+        foreach ($taches as $tache) {
+            $newTache = new Tache();
+            $newTache->setNom($tache["nom"]);
+            $newTache->setPeriodicite($this->getReference($tache["periodicite"]));
+            $newTache->setEquipement($this->getReference($tache["equipement"]));
+            $manager->persist($newTache);
+        };
         $manager->flush();
     }
 }

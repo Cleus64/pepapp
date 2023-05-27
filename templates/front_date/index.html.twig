@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Date index{% endblock %}
+
+{% block javascripts  %}
+<script>
+$(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
+{% endblock %}
+{% block body %}
+    <a href="{{ path('app_front_date_new') }}" class="btn btn-success my-3">Nouveau</a>
+    <br>
+    <h1>Répertoire des tâches</h1>
+    <table id="myTable" class="table table-index table-striped table-responsive display">
+        <thead>
+            <tr>
+                <th>Tâche</th>
+                <th>Equipement</th>
+                <th>Fait le</th>
+                <th>Par</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for date in dates %}
+            <tr>
+                <td>{{ date.tache }}</td>
+                <td>{{ date.tache.equipement }}</td>
+                <td>{{ date.libDate ? date.libDate|date('m-d-Y') : '' }}</td>
+                <td>{{ date.employee }}</td>
+                <td>
+                    <a href="{{ path('app_front_date_show', {'id': date.id}) }}" class="btn btn-dark"><i class="bi bi-eye"></i></a>
+                    <a href="{{ path('app_front_date_edit', {'id': date.id}) }}" class="btn btn-success"><i class="bi bi-pencil"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">Aucune tâche trouvée</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

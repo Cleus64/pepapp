@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle Entrée{% endblock %}
+
+{% block body %}
+    <a href="{{ path('app_front_date_index') }}" class="btn btn-dark mb-4">Retour</a>
+    <h1>Ajouter une entrée</h1>
+    <br>
+
+
+    {{ include('front_date/_form.html.twig') }}
+{% endblock %}

@@ -10,7 +10,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\ArrayCollection;
 
 #[ORM\Entity(repositoryClass: RestaurantRepository::class)]
-#[ApiResource]
+// #[ApiResource(normalizationContext: ['groups' => ['restaurant']])]
 class Restaurant
 {
     #[ORM\Id]

@@ -1,0 +1,13 @@
+{{ form_start(form) }}
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+    <div class="col-12 col-md-6 px-2">
+    {{ form_widget(form) }}
+    {# {{ form_row(form.libDate) }}
+    {{ form_row(form.user) }}
+    {{ form_row(form.tache) }} #}
+<div class="d-flex flex-row-reverse">
+    <button class="btn btn-success my-3">{{ button_label|default('Sauvegarder') }}</button>
+</div>
+    </div>
+    </div>
+{{ form_end(form) }}

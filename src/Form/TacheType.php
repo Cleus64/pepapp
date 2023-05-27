@@ -6,6 +6,7 @@ use App\Entity\Tache;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class TacheType extends AbstractType
 {
@@ -13,9 +14,9 @@ class TacheType extends AbstractType
     {
         $builder
             ->add('nom', TextType::class, ["required" => true])
-            ->add('periodicite')
-            ->add('equipement')
-            ->add('restaurant')
+            ->add('periodicite', TextType::class, ["required" => true])
+            ->add('equipement', TextType::class, ["required" => true])
+            ->add('restaurant', TextType::class, ["required" => true])
         ;
     }
 
